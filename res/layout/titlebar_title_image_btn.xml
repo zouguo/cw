@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <Button
+		    style="@style/TitleBarTitleStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@null"
+		    android:ellipsize="end"
+		    android:gravity="center"
+		    android:maxWidth="176dp"
+		    android:singleLine="true"
+		    android:text="全部"
+		    android:textColor="@color/white"
+		    />
+    
+    <ImageView 
+            android:id="@+id/img_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_bg_down"
+            android:layout_alignParentRight="true"
+            android:paddingTop="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            />
+
+</LinearLayout>

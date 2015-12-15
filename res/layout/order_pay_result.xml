@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            >
+        <TextView
+                android:id="@+id/pos_number"
+                android:paddingLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="4.1"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                />
+
+        <TextView
+                android:id="@+id/work_id"
+                android:paddingLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                />
+
+        <TextView
+                android:id="@+id/user_name"
+                android:paddingLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="2.8"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            />
+
+    <ImageView
+            android:layout_marginTop="63dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_pay_result"
+            android:layout_gravity="center_horizontal"
+            />
+    <TextView
+            android:id="@+id/tv_pay_channel"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单交易成功，微信入账"
+            android:textColor="#626262"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <TextView
+            android:id="@+id/tv_total_money"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6600"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            />
+    <Button
+            android:id="@+id/show_order_detail"
+            android:layout_marginTop="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/bg_btn"
+            android:text="查看订单详情"
+            />
+
+    <Button
+            android:id="@+id/show_cash_money"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/bg_btn"
+            android:text="返回收银"
+            />
+
+</LinearLayout>

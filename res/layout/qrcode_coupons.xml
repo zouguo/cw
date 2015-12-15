@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA">
+
+    <ImageView
+            android:id="@+id/iv_qrcode_coupons"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="74dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <TextView
+            android:id="@+id/tv_qrcode_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textSize="15sp"
+            android:textColor="#626262"
+            android:text="@string/qrcode_coupons_create_prompt"
+            android:layout_gravity="center_horizontal"
+            />
+
+</LinearLayout>

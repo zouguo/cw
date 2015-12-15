@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              >
+              
+    <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            style="@style/TitleBarButtonStyle"
+            android:textColor="@color/white"/>
+
+    <TextView
+            android:id="@+id/count"
+            android:layout_width="28dp"
+            android:layout_height="15dp"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/bg_message_bubbles_notify_blue"
+            android:visibility="invisible"/>
+    
+</LinearLayout>

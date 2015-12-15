@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="light_white">#fafafa</color>
+    <color name="background">#efeff4</color>
+    <color name="transparent">#00000000</color>
+    <color name="line_color">#eaeaea</color>
+    <color name="black">#ff323232</color>
+    <color name="top_dialog_bg_color">#d9dfe9</color>
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ffffffff</color>
+    <color name="viewfinder_corner">#ff8af3ff</color>
+    <color name="viewfinder_laser">#ff8af3ff</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="text_color_default_1">#fafafa</color>
+    <color name="text_color_press_1">#f2f2f2</color>
+    <color name="text_color_default_2">#008bf7</color>
+    <color name="text_color_press_2">#1c9cff</color>
+    <color name="text_color_1">#595959</color>
+</resources>

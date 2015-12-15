@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.clinkworld.pay"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.access_wifi_state"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="com.clinkworld.pay.permission.UPDATE_PRODUCT_BROADCAST"/>
+    <uses-permission android:name="com.clinkworld.pay.permission.UPDATE_COUPONS_BROADCAST"/>
+    <uses-permission android:name="com.clinkworld.pay.permission.UPDATE_STORAGE_BROADCAST"/>
+
+    <permission
+            android:name="com.clinkworld.pay.permission.UPDATE_PRODUCT_BROADCAST"
+            android:protectionLevel="signature">
+    </permission>
+
+    <permission
+            android:name="com.clinkworld.pay.permission.UPDATE_COUPONS_BROADCAST"
+            android:protectionLevel="signature">
+    </permission>
+
+    <permission
+            android:name="com.clinkworld.pay.permission.UPDATE_STORAGE_BROADCAST"
+            android:protectionLevel="signature">
+    </permission>
+
+    <application
+            android:name=".ClinkWorldApplication"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:icon="@drawable/ic_launcher">
+        <activity android:name="com.clinkworld.pay.activity.UserLoginActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.MainActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.POSLoginActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.ScanGoodsActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.StorageListActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.StorageDetailActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.AddProductActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.OrderFlowActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.OrderSearchActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.OrderListActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.OrderDetailActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.PayOrderActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.OrderIncomeActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.PayOrderResultActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.CouponsListActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.QRcodeCouponsActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.CouponsLinkActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.CouponsUseCategoryActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.CouponsSendCategoryActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.activity.CouponsCreateActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.clinkworld.pay.qrcode.CaptureActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+                android:name=".activity.CImagePickActivity"
+                android:exported="false"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CPICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- 分享 -->
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:noHistory="true"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104876041"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:screenOrientation="behind"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity
+                android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+                android:configChanges="keyboardHidden|orientation"
+                android:windowSoftInputMode="adjustResize"
+                android:exported="false">
+        </activity>
+
+        <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+    </application>
+</manifest>

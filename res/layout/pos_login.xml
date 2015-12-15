@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <EditText
+            android:id="@+id/et_input_posnumber"
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:hint="@string/prompt_input_posnumber"
+            android:textColorHint="#C4C4C4"
+            android:background="@drawable/bg_et"
+            android:textSize="12sp"
+            />
+
+    <Button
+            android:id="@+id/btn_pos_login"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/bg_btn"
+            android:text="@string/prompt_login_pos"
+            />
+</LinearLayout>

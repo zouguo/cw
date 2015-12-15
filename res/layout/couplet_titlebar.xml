@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+            android:id="@android:id/title"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"
+            >
+
+        <ViewStub
+                android:id="@+id/leftViewStub"
+                android:inflatedId="@+id/leftView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+        <ViewStub
+                android:background="@color/white"
+                android:id="@+id/middleViewStub"
+                android:inflatedId="@+id/middleView"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ViewStub
+                android:id="@+id/rightViewStub"
+                android:inflatedId="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:background="#bebebe"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

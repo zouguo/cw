@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FAFAFA"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+        <TextView
+                android:id="@+id/tv_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#595959"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/icon_dropdown"
+                android:padding="8dp"
+                />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+        <LinearLayout
+                android:id="@+id/ll_all_order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_all_order"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_all_ordre"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_all_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="25笔"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:background="#EAEAEA"
+                />
+
+        <LinearLayout
+                android:id="@+id/ll_finished_order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_complete_order"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_finished_order"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_finished_all_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="15笔"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:background="#EAEAEA"
+                />
+
+        <LinearLayout
+                android:id="@+id/ll_not_finished_order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_not_finish_order"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_not_finished_order"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_not_finished_all_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="10笔"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            />
+
+    <LinearLayout
+            android:id="@+id/ll_income"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+        <TextView
+                android:id="@+id/tv_all_receipts_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#595959"
+                android:text="今日共收入:"
+                />
+        <TextView
+                android:id="@+id/tv_all_receipts_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#FF6600"
+                android:text="￥182565"
+                />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+        <LinearLayout
+                android:id="@+id/ll_cash_income"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_cash_receipts"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_cash_receipts"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_cash_receipts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="￥250"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:background="#EAEAEA"
+                />
+
+        <LinearLayout
+                android:id="@+id/ll_weixin_income"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_weixin"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_weixin"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="￥150"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:background="#EAEAEA"
+                />
+
+        <LinearLayout
+                android:id="@+id/ll_zhifubao_income"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+            <ImageView
+                    android:layout_marginTop="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_zhifubao"
+                    />
+
+            <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#626262"
+                    android:text="@string/order_flow_zhifubao"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#595959"
+                    android:text="￥350"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            />
+
+</LinearLayout>

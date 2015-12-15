@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">clinkWorld</string>
+
+    <!-- common -->
+    <string name="login">登录平台</string>
+    <string name="reset">重置</string>
+    <string name="next">下一步</string>
+    <string name="cash">收款</string>
+    <string name="quit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="pay_type_cash_receipts">现金</string>
+    <string name="pay_type_orde_weixin">微信</string>
+    <string name="pay_type_order_zhifubao">支付宝</string>
+    <string name="image_no_save_path">请检查SD卡是否可用</string>
+    <string name="image_not_found">找不到图片</string>
+    <string name="image_pick">完成</string>
+    <string name="reg_httpclient_fail">数据加载失败，请稍后重试</string>
+
+    <!-- user login -->
+    <string name="title_login">商家运营平台</string>
+    <string name="login_user_platform">平台号</string>
+    <string name="login_user_platform_prompt">平台号：%1$s</string>
+    <string name="login_user_merchant">商户号</string>
+    <string name="login_user_name">用户名</string>
+    <string name="login_user_password">密 码</string>
+    <string name="login_rest_data">清空数据</string>
+
+    <string name="prompt_input_platform">输入平台号</string>
+    <string name="prompt_input_merchant">输入商户号</string>
+    <string name="prompt_input_username">输入员工号</string>
+    <string name="prompt_input_password">输入密码</string>
+
+    <string name="prompt_platform_can_not_empty">平台号不能为空</string>
+    <string name="prompt_merchant_can_not_empty">商户号不能为空</string>
+    <string name="prompt_username_can_not_empty">员工号不能为空</string>
+    <string name="prompt_password_can_not_empty">密码不能为空</string>
+
+
+    <!-- POS login -->
+    <string name="prompt_input_posnumber">输入pos机号码</string>
+    <string name="prompt_login_pos">登录POS机</string>
+
+    <!-- home -->
+    <string name="home_merchant_id">商户号</string>
+    <string name="home_merchant_name">商户名称</string>
+    <string name="home_work_id">工号</string>
+    <string name="home_user_name">姓名</string>
+    <string name="home_part_cash">收银</string>
+    <string name="home_part_merchandise_control">商品入库</string>
+    <string name="home_part_order">订单</string>
+    <string name="home_part_coupons">优惠券</string>
+    <string name="home_exit_platform">退出平台</string>
+    <string name="home_technical_support">云联天地提供技术支持2015</string>
+    <string name="home_prompt_exit_platform">您确定要退出平台吗？</string>
+
+
+    <!-- cashier -->
+    <string name="title_cash_platform">收银系统</string>
+    <string name="btn_capture_barcode">扫描条形码</string>
+    <string name="bar_code_capture_tips">将条形码放入框中，即可自动完成扫描</string>
+    <string name="qr_code_capture_tips">将二维码放入框中，即可自动完成扫描</string>
+    <string name="vip_phone">会员号:</string>
+    <string name="prompt_input_vip_phone">输入会员手机号</string>
+    <string name="scan_coupons">优惠券:</string>
+    <string name="prompt_input_coupons">输入优惠券号码</string>
+    <string name="all_cost">共计:</string>
+    <string name="deductible_cost">抵扣后金额:</string>
+    <string name="prompt_input_correct_phone_number">请输入正确的手机号码</string>
+    <string name="prompt_input_product_barcode">请输入商品条形码</string>
+    <string name="prompt_input_correct_product_barcode">请输入13位或14位的商品条码！</string>
+    <string name="total_order_price">订单总价</string>
+    <string name="manual_input_order_price">手动输入订单总价</string>
+    <string name="add_product">添加商品</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="has_no_product">还没有添加商品哦~</string>
+    <string name="product_barcode">商品条码</string>
+    <string name="product_name">名称</string>
+    <string name="product_price">价格</string>
+    <string name="product_number">数量</string>
+    <string name="product_cost">小计</string>
+    <string name="product_operation">操作</string>
+    <string name="product_delete">删除</string>
+    <string name="pos_number">POS机编号：%1$s</string>
+    <string name="user_number">工号：%1$s</string>
+    <string name="user_name">收银员：%1$s</string>
+
+    <!-- 扫描 -->
+    <string name="capture_barcode_title">扫描条码</string>
+    <string name="capture_qrcode_title">扫描二维码</string>
+    <string name="capture_right_title">扫描完成</string>
+    <string name="capture_btn_input_barcode">手动输入条形码</string>
+    <string name="capture_barcode">商品条形码</string>
+    <string name="capture_no_this_barcode">该条码不存在!</string>
+
+    <!-- 入库单 -->
+    <string name="sotrage_list_title">入库单</string>
+    <string name="storage_search_number">搜索入库单编号</string>
+    <string name="storage_commodity_storage">商品入库</string>
+    <string name="storage_number">入库单号</string>
+    <string name="storage_number_prompt">入库单号：%1$s</string>
+    <string name="storage_date">日期</string>
+    <string name="storage_purchasing_cost">进货总价</string>
+    <string name="storage_gross_goods">货物总值</string>
+    <string name="storage_gross_profit">毛利</string>
+
+    <!-- 入库单详情 -->
+    <string name="storage_detail_title">入库单详情</string>
+    <string name="storage_detail_product">商品</string>
+    <string name="storage_detail_number">数量</string>
+    <string name="storage_detail_purchasing">成本价</string>
+    <string name="storage_deatil_price">售价</string>
+    <string name="storage_detail_product_total_number">共计%1$d件，合计成本</string>
+
+    <!-- 添加商品 -->
+    <string name="add_product_title">添加商品</string>
+    <string name="add_product_barcode">商品条形码:</string>
+    <string name="add_product_manual_input">手动输入</string>
+    <string name="add_product_name">商品名称:</string>
+    <string name="add_product_input_name_prompt">请输入商品名称</string>
+    <string name="add_product_upload_product_image">上传图片</string>
+    <string name="add_product_image">商品图片:</string>
+    <string name="add_product_purchasing">成本价:</string>
+    <string name="add_product_input_purchasing_prompt">请输入成本价</string>
+    <string name="add_product_price">售价:</string>
+    <string name="add_product_input_price_prompt">请输入售价</string>
+    <string name="add_product_number">数量</string>
+    <string name="add_product_btn">添加</string>
+    <string name="add_product_complete_storage">完成入库</string>
+
+    <!-- 订单流水 -->
+    <string name="order_flow_title">订单流水</string>
+    <string name="order_search">订单查询</string>
+    <string name="order_flow_today">今日</string>
+    <string name="order_flow_this_week">本周</string>
+    <string name="order_flow_this_monty">当月</string>
+    <string name="order_flow_all">全部</string>
+    <string name="order_flow_all_ordre">全部订单</string>
+    <string name="order_flow_finished_order">成交订单</string>
+    <string name="order_flow_not_finished_order">未成交订单</string>
+    <string name="order_flow_order_number">%1$d笔</string>
+    <string name="order_flow_cash_receipts">现金收入</string>
+    <string name="order_flow_weixin">微信收入</string>
+    <string name="order_flow_zhifubao">支付宝收入</string>
+    <string name="order_flow_all_receipts">%1$s共收入:</string>
+
+    <!-- 订单查询 -->
+    <string name="order_search_title">订单查询</string>
+    <string name="order_search_input_number">搜索订单号</string>
+    <string name="order_search_result">查询结果</string>
+    <string name="order_search_item_number">订单编号</string>
+    <string name="order_search_item_posnumber">POS机号</string>
+    <string name="order_search_item_money">订单金额</string>
+    <string name="order_search_item_status">订单状态</string>
+    <string name="order_search__result_success">交易成功</string>
+    <string name="order_search__result_not_cash">待付款</string>
+
+    <!-- 订单列表 -->
+    <string name="order_list_create_time">生成时间</string>
+    <string name="order_list_complete_time">完成时间</string>
+    <string name="order_list_gathering_type">收款方式</string>
+    <string name="order_list_gathering_time">收款时间</string>
+
+    <!-- 订单详情 -->
+    <string name="order_detail_title">订单详情</string>
+    <string name="order_detail_number">订单编号:</string>
+    <string name="order_detail_money">订单金额:</string>
+    <string name="order_detail_coupons">优惠券:</string>
+    <string name="order_detail_telephone">会员手机号:</string>
+    <string name="order_detail_pay_type">收款方式:</string>
+    <string name="order_detail_receivable_money">应收金额:</string>
+    <string name="order_detail_paid_money">实收金额:</string>
+    <string name="order_detail_btn_cash">去收款</string>
+    <string name="order_detail_product_number">商品编号</string>
+    <string name="order_detail_product_name">商品名称</string>
+    <string name="order_detail_product_price">单价</string>
+    <string name="order_detail_product_num">数量</string>
+    <string name="order_detail_product_cost">小计</string>
+
+    <!-- 优惠券 -->
+    <string name="coupons_title">优惠券</string>
+    <string name="coupons_right_title">创建</string>
+    <string name="coupons_use_condition">单笔满%1$d元可用</string>
+    <string name="coupons_max_discount">最多折扣￥%1$d</string>
+    <string name="coupons_validity_period">有效期：%1$s至%2$s</string>
+
+    <!-- 二维码发券 -->
+    <string name="qrcode_coupons_title">二维码发券</string>
+    <string name="qrcode_coupons_create_prompt">生成优惠的二维码</string>
+
+    <!-- 链接发券 -->
+    <string name="link_coupons_title">链接发券</string>
+    <string name="link_coupons_url_prompt">生成优惠券链接如下：</string>
+    <string name="link_coupons_copy_btn">复制地址</string>
+    <string name="link_coupons_share">分享至：</string>
+
+    <!-- 创建优惠券 -->
+    <string name="coupons_create_title">创建优惠券</string>
+    <string name="coupons_create_type">礼券类型：</string>
+    <string name="coupons_create_name">礼券名称：</string>
+    <string name="coupons_create_discount">礼券折扣：</string>
+    <string name="coupons_create_money">礼券面值：</string>
+    <string name="coupons_create_max_discount_money">最多折扣金额：</string>
+    <string name="coupons_create_send_quantity">发放量：</string>
+    <string name="coupons_create_full_transaction">可用礼券的单笔交易满额：</string>
+    <string name="coupons_create_start_time">生效时间：</string>
+    <string name="coupons_create_end_time">过期时间：</string>
+    <string name="coupons_create_limit_collar">每人限领：</string>
+    <string name="coupons_create_choose">请选择</string>
+    <string name="coupons_create_input">请输入</string>
+    <string name="coupons_create_dialog_money">面值券</string>
+    <string name="coupons_create_dialog_discount">折扣券</string>
+    <string name="coupons_choose_number_not_limited">不限</string>
+    <string name="coupons_choose_number_define">自定义</string>
+
+
+    <!-- 分享所用的测试数据 -->
+    <string name="weibosdk_demo_share_webpage_desc">网页描述：XXX</string>
+    <string name="weibosdk_demo_share_music_desc">音乐描述：XXX</string>
+    <string name="weibosdk_demo_share_video_desc">视频描述：XXX</string>
+    <string name="weibosdk_demo_share_voice_desc">声音描述：XXX</string>
+    <string name="weibosdk_demo_app_url">
+        https://github.com/mobileresearch/weibo_android_sdk/blob/master/WeiboSDKDemo.apk
+    </string>
+    <string name="weibosdk_demo_test_webpage_url">http://news.sina.com.cn/c/2013-10-22/021928494669.shtml</string>
+    <string name="weibosdk_demo_test_music_url">http://music.sina.com.cn/yueku/i/2850305.html</string>
+    <string name="weibosdk_demo_test_video_url">http://video.sina.com.cn/p/sports/cba/v/2013-10-22/144463050817.html
+    </string>
+    <!-- NOTE: Voice 的 URL 与 Music 一样 -->
+    <string name="weibosdk_demo_test_voice_url">http://music.sina.com.cn/yueku/i/2850305.html</string>
+
+    <!-- 分享示例模板 -->
+    <string name="weibosdk_demo_share_text_template">我正在使用微博客户端发博器分享文字</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_music_template">我正在听 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_video_template">我正在看 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_voice_template">我分享了 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_webpage_demo">XXX 新闻</string>
+    <string name="weibosdk_demo_share_music_demo">XXX 音乐</string>
+    <string name="weibosdk_demo_share_video_demo">XXX 视频</string>
+    <string name="weibosdk_demo_share_voice_demo">XXX 声音</string>
+
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_date_choose">
+        <item>今日</item>
+        <item>本周</item>
+        <item>当月</item>
+        <item>全部</item>
+    </string-array>
+</resources>

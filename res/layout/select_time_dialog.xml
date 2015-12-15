@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <!-- 遮罩层显示的按钮操作 -->
+    <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#86222222"/>
+
+
+    <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="303dp"
+            android:layout_height="272.5dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="303dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+            <ImageView
+                    android:id="@+id/left_arror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/left_arror"/>
+            <TextView
+                    android:id="@+id/show_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:padding="10dp"
+                    android:text="2015.7.15"/>
+            <ImageView
+                    android:id="@+id/right_arror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/right_arror"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+            <com.clinkworld.pay.whell.WheelView
+                    android:id="@+id/whell_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"/>
+            <com.clinkworld.pay.whell.WheelView
+                    android:id="@+id/whell_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"/>
+            <com.clinkworld.pay.whell.WheelView
+                    android:id="@+id/whell_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"/>
+
+            <com.clinkworld.pay.whell.WheelView
+                    android:id="@+id/whell_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"/>
+
+        <LinearLayout
+                android:id="@+id/sub"
+                android:layout_width="303dp"
+                android:layout_height="57.5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8fd1d7"
+                    android:textSize="18sp"
+                    android:text="确定"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

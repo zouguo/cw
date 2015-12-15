@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical"
+                    >
+                <TextView
+                        android:id="@+id/pos_number"
+                        android:paddingLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="4.1"
+                        android:layout_height="wrap_content"
+                        android:text="POS机编号：001"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        />
+
+                <TextView
+                        android:id="@+id/work_id"
+                        android:paddingLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        />
+
+                <TextView
+                        android:id="@+id/user_name"
+                        android:paddingLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.8"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        />
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAEAEA"
+                    />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_frame"
+                    >
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_detail_number"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/detail_order_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_detail_money"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/detail_order_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:id="@+id/rl_pay_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券已抵扣"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/detail_pay_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:id="@+id/view_seprate_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_detail_telephone"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/detail_telephone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                        android:id="@+id/view_seprate"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_detail_coupons"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/detail_coupons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:id="@+id/prompt_pay_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收款方式:"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_choose_pay_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="请选择"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@id/prompt_pay_type"
+                            android:singleLine="true"
+                            android:gravity="center_vertical|right"
+                            android:textSize="12sp"
+                            android:textColor="#C4C4C4"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        >
+                    <TextView
+                            android:id="@+id/tv_prompt_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现金收款:"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            android:alpha="0.5"
+                            />
+
+                    <LinearLayout
+                            android:id="@+id/ll_cash_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="12dp"
+                            >
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_change"
+                                android:layout_gravity="center"
+                                />
+                    </LinearLayout>
+
+
+                    <EditText
+                            android:id="@+id/detail_receivable_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_toRightOf="@id/tv_prompt_1"
+                            android:layout_toLeftOf="@id/ll_cash_money"
+                            android:singleLine="true"
+                            android:enabled="false"
+                            android:gravity="center_vertical|right"
+                            android:textSize="12sp"
+                            android:inputType="phone"
+                            android:imeOptions="actionDone"
+                            android:digits="1234567890."
+                            android:textColorHint="#C4C4C4"
+                            android:hint="@string/coupons_create_input"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/dotted_line"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        >
+                    <TextView
+                            android:id="@+id/rl_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="找零:"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            android:alpha="0.6"
+                            />
+
+                    <TextView
+                            android:id="@+id/tv_change_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:textColor="#626262"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    />
+            <TextView
+                    android:id="@+id/tv_capture_qrcode"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="顾客扫描付款码"
+                    android:textSize="15sp"
+                    android:textColor="#ff6600"
+                    android:visibility="gone"
+                    />
+
+            <Button
+                    android:id="@+id/btn_next"
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn"
+                    android:text="@string/next"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_no_cash"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="暂不收款"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_btn_red"
+                    />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

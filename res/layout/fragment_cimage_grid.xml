@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <GridView
+                android:id="@+id/gridview"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="75dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:numColumns="4"
+                android:padding="4dp"
+                android:verticalSpacing="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/progressContainer"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="正在加载中，请稍候…"
+                android:paddingTop="4dip"
+                android:singleLine="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

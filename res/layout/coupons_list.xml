@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.clinkworld.pay.views.PullRefreshListView
+            android:id="@+id/coupons_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="14dp"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false"
+            android:scrollbars="none"
+            />
+
+</LinearLayout>
